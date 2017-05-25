@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="projectName">
+<html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
@@ -15,23 +15,27 @@
      
      <!-- FireBase -->
      <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+         
+     <script>
+     // Initialize Firebase
+     var config = {
+     apiKey: "AIzaSyBOoTvRHsctR3qW4v32wv_AwBkGZLBN1h4",
+     authDomain: "bloc-chat-21997.firebaseapp.com",
+     databaseURL: "https://bloc-chat-21997.firebaseio.com",
+     projectId: "bloc-chat-21997",
+     storageBucket: "bloc-chat-21997.appspot.com",
+     messagingSenderId: "1002548171723"
+     };
+     firebase.initializeApp(config);
+     </script>
      
      <!-- AngularFire -->
-     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-    
-     <script>
-       // Initialize Firebase
-       var config = {
-         apiKey: <your unique api key>,
-         authDomain: <your unique auth url>,
-         databaseURL: <your unique db url>,
-         storageBucket: <your unique bucket url>,
-         messagingSenderId: <your unique messagingSenderId>
-       };
-       firebase.initializeApp(config);
+     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js">
      </script>
     
      <!-- Application Files -->
      <script src="/scripts/app.js"></script>
+     <script src="/scripts/controllers/HomeCtrl.js"></script> 
+     <script src="/scripts/controllers/Room.js"></script>
 </body>
 </html>
