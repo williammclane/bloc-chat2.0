@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 </head>
 <body>
-     <ui-view></ui-view>
-     <!-- Angular -->
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-      
-     <!-- AngularUI Router -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
-     
-     <!-- FireBase -->
-     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-         
-     <script>
-     // Initialize Firebase
-     var config = {
+    <ui-view></ui-view>
+
+    <!-- Angular -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!-- AngularUI Router -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- FireBase -->
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
+    <!-- AngularFire -->
+
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <!-- AngularUI Bootstrap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- Angular Animate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    
+    <script>
+    // Initialize Firebase
+     var config = {
      apiKey: "AIzaSyBOoTvRHsctR3qW4v32wv_AwBkGZLBN1h4",
      authDomain: "bloc-chat-21997.firebaseapp.com",
      databaseURL: "https://bloc-chat-21997.firebaseio.com",
@@ -27,15 +45,12 @@
      messagingSenderId: "1002548171723"
      };
      firebase.initializeApp(config);
-     </script>
-     
-     <!-- AngularFire -->
-     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js">
-     </script>
+    </script>
     
-     <!-- Application Files -->
-     <script src="/scripts/app.js"></script>
-     <script src="/scripts/controllers/HomeCtrl.js"></script> 
-     <script src="/scripts/controllers/Room.js"></script>
+    <!-- Application Files -->
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/room.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
 </body>
 </html>

@@ -1,5 +1,13 @@
-<h1>Bloc Chat</h1>
-
-<ul>
-    <li ng-repeat="room in rooms">{{ room.$value }}</li>
-</ul>
+<body>
+    <div class="left-column">
+        <div class="home-title">
+            <h1>Bloc Chat</h1>
+        </div>
+            <button class="new-room" ng-click="home.open()">
+            <h4>New Room</h4>
+            </button>
+    </div>
+    <div class="rooms-list">
+        <div class="rooms" ng-repeat="room in home.rooms">{{ room.$value }}</div>
+    </div>
+</body>

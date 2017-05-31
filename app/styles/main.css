@@ -1,0 +1,21 @@
+html {
+    min-height: 100%;
+}
+
+body {
+     text-align: center;
+}
+
+.left-column {
+    width: 100%;
+    background-color: skyblue;
+}
+
+.rooms-list {
+    width: 100%;
+    background-color: rosybrown;
+}
+
+.new-room {
+    background-color: darkseagreen;
+}
