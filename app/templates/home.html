@@ -1,6 +1,6 @@
 <body>
     <div class="left-column">
-        <div class="home-title">
+        <div>
             <h1>Bloc Chat</h1>
         </div>
             <button class="new-room" ng-click="home.open()">
@@ -8,6 +8,18 @@
             </button>
     </div>
     <div class="rooms-list">
-        <div class="rooms" ng-repeat="room in home.rooms">{{ room.$value }}</div>
+        <div class="rooms" ng-repeat="room in home.rooms" ng-click="home.currentRoom(room)">{{ room.$value }}</div>
+    </div>
+    <div class="message-list">
+        <div class="chat-room-title">
+        <h4>{{ home.currentChatRoom }}</h4>
+        </div>
+        <div class="chat-room-content">
+            <div ng-repeat="message in home.messages">
+                <p> {{ message.username }} </p>
+                <p> {{ message.content }} </p>
+                <p> {{ message.sentAt }} </p>
+            </div>
+        </div>
     </div>
 </body>

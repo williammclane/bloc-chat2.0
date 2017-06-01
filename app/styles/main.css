@@ -4,6 +4,7 @@ html {
 
 body {
      text-align: center;
+     overflow: hidden;
 }
 
 .left-column {
@@ -12,10 +13,22 @@ body {
 }
 
 .rooms-list {
-    width: 100%;
+    width: 25%;
     background-color: rosybrown;
+    float: left; 
+}
+
+.message-list {
+    overflow: hidden;
+    width: 75%;
+    background-color: aquamarine;
+    
 }
 
 .new-room {
+    background-color: darkgrey;
+}
+.new-room:hover {
     background-color: darkseagreen;
 }
+
